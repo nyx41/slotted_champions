@@ -2,7 +2,7 @@ const predefinedChampions = [
   {
     name: 'Darius',
     lane: 'Top', //optional
-    developer: 'Riot Games',
+    developer: 'unsigned.long.long',
     description: 'Supported spells: Q, W, E, R' //optional
   },
 ];
