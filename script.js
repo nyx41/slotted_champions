@@ -551,7 +551,7 @@ fetch('https://game.gtimg.cn/images/lol/act/img/js/heroList/hero_list.js')
   .then(data => {
     allChampions = data.hero.map(hero => ({
       name: hero.alias,
-      image: `Champions/${hero.alias}.png`
+      image: `https://game.gtimg.cn/images/lol/act/img/champion/${hero.alias}.png`
     }));
     renderAllSections();
   })
