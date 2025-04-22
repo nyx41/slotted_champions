@@ -27,9 +27,9 @@ body, ul {
   }
   @media (max-width: 600px) {
     .floating-logo {
-      height: 64px;
-      top: 0.5rem;
-      left: 0.5rem;
+      height: 48px;
+      top: 0.75rem;
+      left: 0.75rem;
     }
   }
   .slotted-header {
