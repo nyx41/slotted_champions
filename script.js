@@ -65,6 +65,274 @@ const predefinedChampions = [
   },
 
   /* Mid */
+  {
+    "name": "Ahri",
+    "lane": "Mid",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Brand",
+    "lane": "Mid",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Cassiopeia",
+    "lane": "Mid",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Corki",
+    "lane": "Mid",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Kassadin",
+    "lane": "Mid",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Lux",
+    "lane": "Mid",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Orianna",
+    "lane": "Mid",
+    "developer": "Muffin",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Sylas",
+    "lane": "Mid",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Swain",
+    "lane": "Mid",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Sylas",
+    "lane": "Mid",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Syndra",
+    "lane": "Mid",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Veigar",
+    "lane": "Mid",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Vel'Koz",
+    "lane": "Mid",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Viktor",
+    "lane": "Mid",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Xerath",
+    "lane": "Mid",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Yasuo",
+    "lane": "Mid",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Yone",
+    "lane": "Mid",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Zed",
+    "lane": "Mid",
+    "developer": "Muffin",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Zoe",
+    "lane": "Mid",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+
+  /* Bot */
+  {
+    "name": "Ashe",
+    "lane": "Bot",
+    "developer": "unsigned.long.long",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Caitlyn",
+    "lane": "Bot",
+    "developer": "Muffin",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Ezreal",
+    "lane": "Bot",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, R"
+  },
+  {
+    "name": "Jinx",
+    "lane": "Bot",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Kogmaw",
+    "lane": "Bot",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Lucian",
+    "lane": "Bot",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Miss Fortune",
+    "lane": "Bot",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Nilah",
+    "lane": "Bot",
+    "developer": "altx0",
+    "description": "Supported spells: Q, R"
+  },
+  {
+    "name": "Samira",
+    "lane": "Bot",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Sivir",
+    "lane": "Bot",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W"
+  },
+  {
+    "name": "Tristana",
+    "lane": "Bot",
+    "developer": "sx",
+    "description": "Supported spells: Q, E, R"
+  },
+  {
+    "name": "Twitch",
+    "lane": "Bot",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Xayah",
+    "lane": "Bot",
+    "developer": "Muffin",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Zeri",
+    "lane": "Bot",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+
+  /* Support */ 
+  {
+    "name": "Blitzcrank",
+    "lane": "Support",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Karma",
+    "lane": "Support",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Lulu",
+    "lane": "Support",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Morgana",
+    "lane": "Support",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Nami",
+    "lane": "Support",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Senna",
+    "lane": "Support",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Swain",
+    "lane": "Support",
+    "developer": "altx0",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Thresh",
+    "lane": "Support",
+    "developer": "!EatingCereal",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Vel'Koz",
+    "lane": "Support",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E"
+  },
+  {
+    "name": "Xerath",
+    "lane": "Support",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Zoe",
+    "lane": "Support",
+    "developer": "sx",
+    "description": "Supported spells: Q, W, E, R"
+  }
 ];
 
 const predefinedRoles = {
@@ -256,7 +524,13 @@ const closeModal = document.getElementById('closeModal');
 const toggleSupported = document.getElementById('toggleSupported');
 
 closeModal.addEventListener('click', () => {
-  modal.classList.add('hidden');
+  const modalContent = document.querySelector('.modal-content');
+  modalContent.classList.add('closing');
+
+  setTimeout(() => {
+    modal.classList.add('hidden');
+    modalContent.classList.remove('closing');
+  }, 300);
 });
 
 searchInput.addEventListener('input', renderAllSections);

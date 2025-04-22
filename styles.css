@@ -212,6 +212,11 @@ body, ul {
     gap: 1rem;
     transition: all 0.3s ease;
   }
+  @media (max-width: 600px) {
+    .champion-row {
+      justify-content: center;
+    }
+  }
   .champion-row.collapsed {
     max-height: 0;
     overflow: hidden;
@@ -316,4 +321,41 @@ body, ul {
   @keyframes popIn {
     from { transform: scale(0.9); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
+  }
+  @keyframes popOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+  .developer-name {
+    color: #17C964;
+    font-weight: bold;
+  }
+  
+  .modal-content.closing {
+    animation: popOut 0.3s ease forwards;
+  }
+  @media (max-width: 600px) {
+    .champion-row {
+      justify-content: center;
+    }
+  
+    .champion-card {
+      width: 90px;
+      padding: 0.5rem;
+    }
+  
+    .champion-card img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .champion-card h3 {
+      font-size: 0.8rem;
+    }
   }
