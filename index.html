@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slotted - Champions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <img src="slotted_logo.webp" alt="Logo" class="floating-logo" />
+
+  <section class="search-section" style="font-size: 2rem">
+    <h1>Supported <span style="color:#17C964">Champions</span></h1>
+  </section>
+  <!-- Search -->
+  <section class="search-section" style="font-size: 2rem; padding: 2rem;">
+  
+    <div style="margin: 2rem auto; text-align: center;">
+      <input type="text" id="searchInput" placeholder="Search champions..." />
+    </div>
+  
+    <div class="filter-toggle">
+      <label class="custom-checkbox">
+        <input type="checkbox" id="toggleSupported" />
+        <span class="checkmark"></span>
+        Hide unsupported champions
+      </label>
+    </div>
+  </section>
+
+  <!-- Champion Sections -->
+  <main id="champion-sections"></main>
+
+  <!-- Modal -->
+  <div id="championModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <img id="modalImage" alt="">
+      <h2 id="modalName"></h2>
+      <p id="modalDescription"></p>
+      <p><br/></p>
+      <p><strong>Developer:</strong> <span id="modalDeveloper"></span></p>
+      <a id="modalLink" href="#" target="_blank" class="u-gg-logo">
+        <img src="https://static.bigbrain.gg/assets/ugg/favicon/apple-touch-icon.png" alt="u.gg" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="slotted-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo_full_white2.webp" alt="Logo" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

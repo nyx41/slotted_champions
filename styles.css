@@ -1,0 +1,319 @@
+/* Reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Header */
+  .floating-logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    z-index: 999;
+  }
+  @media (max-width: 600px) {
+    .floating-logo {
+      height: 32px;
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+  }
+  .slotted-header {
+    background-color: #1e1e1e;
+    padding: 1rem 0;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  .auth-buttons a {
+    color: #ffffff;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  .filter-toggle {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Modern styled checkbox */
+  .custom-checkbox {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    color: #ccc;
+  }
+  
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .custom-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 18px;
+    width: 18px;
+    background-color: #1e1e1e;
+    border: 2px solid #17C964;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: #17C964;
+  }
+  
+  .custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark::after {
+    display: block;
+  }
+  
+  .custom-checkbox .checkmark::after {
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 9px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .auth-buttons .login {
+    background-color: #333333;
+  }
+  .auth-buttons .register {
+    background-color: #4CAF50;
+  }
+
+  .filter-toggle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .filter-toggle input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Footer */
+  .slotted-footer {
+    background-color: #1e1e1e;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 1px solid #2a2a2a;
+  }
+  .footer-content p {
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .footer-links a {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+
+  .footer-logo {
+    margin-top: 1rem;
+  }
+  .footer-logo img {
+    max-width: 180px;
+    height: auto;
+  }
+  
+  /* Search Section */
+  .search-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  .search-section input {
+    padding: 0.75rem;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Champion Sections */
+  .champion-section {
+    padding: 1rem 2rem;
+  }
+  .section-header {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+    align-items: center;
+  }
+  .lane-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .lane-header img {
+    width: 20px;
+    height: 20px;
+  }
+  .champion-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: all 0.3s ease;
+  }
+  .champion-row.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .champion-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 110px;
+  }
+  .champion-card.grayscale img {
+    filter: grayscale(100%);
+    opacity: 0.4;
+  }
+  .champion-card:hover {
+    transform: scale(1.05);
+    background-color: #2a2a2a;
+  }
+  .champion-card img {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  .champion-card h3 {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .modal.hidden {
+    display: none;
+  }
+  .modal-content {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    transform: scale(0.9);
+    animation: popIn 0.3s ease forwards;
+  }
+  .modal-content img {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  .modal-content h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .modal-content p {
+    margin: 0.5rem 0;
+    color: #ccc;
+  }
+  .u-gg-logo {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    opacity: 1.0;
+  }
+  .u-gg-logo img {
+    width: 100%;
+    height: auto;
+  }
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  @keyframes popIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
