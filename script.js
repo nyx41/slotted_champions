@@ -1,10 +1,70 @@
 const predefinedChampions = [
+  /* Top */
   {
     name: 'Darius',
     lane: 'Top', //optional
     developer: 'unsigned.long.long',
     description: 'Supported spells: Q, W, E, R' //optional
   },
+  {
+    name: 'Aatrox',
+    developer: '!EatingCereal',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'Gwen',
+    developer: '!EatingCereal',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'Jayce',
+    developer: 'altx0',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'Mordekaiser',
+    developer: '!EatingCereal',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'Olaf',
+    developer: 'altx0',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'Riven',
+    developer: 'Alchenda',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+
+  /* Jungle */
+  {
+    name: 'Amumu',
+    developer: 'altx0',
+    description: 'Supported spells: Q, R' //optional
+  },
+  {
+    name: 'Diana',
+    developer: 'altx0',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'Hecarim',
+    developer: '!EastingCereal',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'MasterYi',
+    developer: 'Alchenda',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+  {
+    name: 'Wukong',
+    developer: 'altx0',
+    description: 'Supported spells: Q, W, E, R' //optional
+  },
+
+  /* Mid */
 ];
 
 const predefinedRoles = {
