@@ -332,6 +332,12 @@ const predefinedChampions = [
     "lane": "Support",
     "developer": "sx",
     "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Pyke",
+    "lane": "Support",
+    "developer": "unsigned.long.long",
+    "description": "Supported spells: Q, W, E, R"
   }
 ];
 
