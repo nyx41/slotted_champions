@@ -657,7 +657,7 @@ function renderAllSections() {
         item.classList.add('grayscale');
       }
       item.innerHTML = `
-        <img src="${c.image}" alt="${c.name}">
+        <img src="${c.image}"">
         <h3>${c.name}</h3>
       `;
       if (c.isPredefined) {
