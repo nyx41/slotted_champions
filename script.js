@@ -55,7 +55,7 @@ const predefinedChampions = [
   },
   {
     name: 'MasterYi',
-    developer: 'Alchenda',
+    developer: 'unsigned.long.long',
     description: 'Supported spells: Q, W, E, R' //optional
   },
   {
@@ -68,7 +68,7 @@ const predefinedChampions = [
   {
     "name": "Ahri",
     "lane": "Mid",
-    "developer": "altx0",
+    "developer": "unsigned.long.long",
     "description": "Supported spells: Q, W, E, R"
   },
   {
