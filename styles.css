@@ -142,7 +142,6 @@ body, ul {
   /* Footer */
   .slotted-footer {
     background-color: #1e1e1e;
-    padding: 2rem 1rem;
     text-align: center;
     border-top: 1px solid #2a2a2a;
   }
@@ -166,6 +165,13 @@ body, ul {
   .footer-logo img {
     max-width: 180px;
     height: auto;
+  }
+
+  /* Supported header section */
+  .champions-section {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
   }
   
   /* Search Section */
@@ -210,7 +216,7 @@ body, ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
   @media (max-width: 600px) {
     .champion-row {
@@ -302,18 +308,30 @@ body, ul {
   .u-gg-logo {
     position: absolute;
     bottom: 1rem;
-    right: 1rem;
-    width: 36px;
-    height: 36px;
+    right: 3.5rem;
+    width: 32px;
+    height: 32px;
     opacity: 1.0;
   }
   .u-gg-logo img {
     width: 100%;
     height: auto;
   }
+  .op-gg-logo {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    opacity: 1.0;
+  }
+  .op-gg-logo img {
+    width: 100%;
+    height: auto;
+  }
   .close-btn {
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
     cursor: pointer;
     font-size: 1.5rem;

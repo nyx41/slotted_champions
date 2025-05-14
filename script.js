@@ -338,6 +338,11 @@ const predefinedChampions = [
     "lane": "Support",
     "developer": "unsigned.long.long",
     "description": "Supported spells: Q, W, E, R"
+  },
+  {
+    "name": "Viego",
+    "developer": "unsigned.long.long",
+    "description": "Supported spells: Q, W, E, R, Passive (Souls)"
   }
 ];
 
@@ -526,6 +531,7 @@ const modalName = document.getElementById('modalName');
 const modalDescription = document.getElementById('modalDescription');
 const modalDeveloper = document.getElementById('modalDeveloper');
 const modalLink = document.getElementById('modalLink');
+const modalLinkOPGG = document.getElementById('modalLink2');
 const closeModal = document.getElementById('closeModal');
 const toggleSupported = document.getElementById('toggleSupported');
 
@@ -661,6 +667,7 @@ function renderAllSections() {
           modalDescription.textContent = c.description;
           modalDeveloper.textContent = c.developer;
           modalLink.href = `https://u.gg/lol/champions/${c.name.toLowerCase()}/build`;
+          modalLinkOPGG.href = `https://op.gg/lol/champions/${c.name.toLowerCase()}/build`; //https://op.gg/lol/champions/smolder/build
           modal.classList.remove('hidden');
         });
       }
