@@ -216,7 +216,7 @@ body, ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
   @media (max-width: 600px) {
     .champion-row {
@@ -249,12 +249,27 @@ body, ul {
     transform: scale(1.05);
     background-color: #2a2a2a;
   }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .champion-card img {
     width: 72px;
     height: 72px;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+  }
+
+  .champion-card img.loaded {
+    opacity: 1;
+    animation: fadeIn 2s ease-out forwards;
   }
   .champion-card h3 {
     font-size: 0.9rem;
@@ -371,6 +386,7 @@ body, ul {
     .champion-card img {
       width: 60px;
       height: 60px;
+      opacity: 0;
     }
   
     .champion-card h3 {
